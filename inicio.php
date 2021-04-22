@@ -57,7 +57,7 @@
                             escritas do card e mais coisas aquin fjrhtvr tjrh tem tertjrtmjrt</p>
                     </div>
                     <div class="imagem-card">
-                        <img src="icones/default.png" alt="">
+                        <img src="icones/informacoesdois.png" alt="">
                     </div>
                     <div class="acao-card baixo">
                         <p>Tomar uma acao viavel</p>
@@ -75,7 +75,7 @@
                             escritas do card e mais coisas aquin fjrhtvr tjrh tem tertjrtmjrt</p>
                     </div>
                     <div class="imagem-card">
-                        <img src="icones/default.png" alt="">
+                        <img src="icones/dados.png" alt="">
                     </div>
                     <div class="acao-card baixo">
                         <p>Tomar uma acao viavel</p>
@@ -97,7 +97,7 @@
                             escritas do card e mais coisas aquin fjrhtvr tjrh tem tertjrtmjrt</p>
                     </div>
                     <div class="imagem-card">
-                        <img src="icones/default.png" alt="">
+                        <img src="icones/cadeado.png" alt="">
                     </div>
                     <div class="acao-card baixo">
                         <p>Tomar uma acao viavel</p>
@@ -115,7 +115,7 @@
                             escritas do card e mais coisas aquin fjrhtvr tjrh tem tertjrtmjrt</p>
                     </div>
                     <div class="imagem-card">
-                        <img src="icones/default.png" alt="">
+                        <img src="icones/pagamentosdois.png" alt="">
                     </div>
                     <div class="acao-card baixo">
                         <p>Tomar uma acao viavel</p>
