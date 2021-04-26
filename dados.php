@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="_css/one.css">
+    <link rel="stylesheet" href="_css/reversa.css">
     <title>Dados pessoais</title>
 </head>
 
@@ -72,25 +73,21 @@
         <!-- -->
 
         <style>
-            .rv-modal{display:block;}
-            .rv-modal-fundodetras{ position: absolute;top:0;left:0;width: 100%;height:100%;background: rgba(0,0,0,.1);z-index: 2;}
-            .rv-modal-conteudo{ position: absolute;top:10vh;left:20%;width:60%;height:80vh;background: #fff;z-index: 3;border:1px solid #7a7a7a7a;border-radius: 5px;}
-            .rv-modal-cabecalho{width:100%;height: 10%; border-bottom:1px solid #aaa;position: relative;display: flex;justify-content: center;align-items: center;}
-            .rv-modal-cabecalho h3{color:#7a7a7a}
-            .rv-modal-corpo{ width: 100%; height: 80%; display: flex;border-bottom:1px solid #aaa;position: relative;}
-            .rv-modal-pes{width:100%;height: 10px;position: relative;}
+            
         </style>
         <div class="rv-modal">
             <div class="rv-modal-fundodetras"></div>
             <div class="rv-modal-conteudo">
                 <div class="rv-modal-cabecalho">
                     <h3>Titulo do modal e mais</h3>
+                    <span class="rv-btn-r rv-btn-tres" style="position:absolute;top:15px;right:15px;"></span>
                 </div>
                 <div class="rv-modal-corpo">
 
                 </div>
                 <div class="rv-modal-pes">
-
+                    <span class="rv-btn rv-btn-g rv-btn-dois rv-esquerda rv-margem-20" >Voltar</span>
+                    <span class="rv-btn rv-btn-g rv-btn-um rv-direita rv-margem-20" >Continuar</span>
                 </div>
             </div>
         </div>

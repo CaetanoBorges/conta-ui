@@ -1,0 +1,142 @@
+/* Modal */
+
+.rv-modal {
+    display: block;
+}
+
+.rv-modal-fundodetras {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+}
+
+.rv-modal-conteudo {
+    position: absolute;
+    top: 10vh;
+    left: 20%;
+    width: 60%;
+    height: 80vh;
+    background: #fff;
+    z-index: 3;
+    border: 1px solid #7a7a7a7a;
+    border-radius: 5px;
+}
+
+.rv-modal-cabecalho {
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid #aaa;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rv-modal-cabecalho h3 {
+    color: #7a7a7a
+}
+
+.rv-modal-corpo {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    border-bottom: 1px solid #aaa;
+    position: relative;
+}
+
+.rv-modal-pes {
+    width: 100%;
+    height: 10px;
+    position: relative;
+}
+
+
+/* Butões */
+
+.rv-btn-r {
+    width: 15px;
+    height: 15px;
+    background: #eaeaea;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 1px #eaeaea;
+    cursor: pointer;
+}
+
+.rv-btn {
+    height: 30px;
+    background: #eaeaea;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+.rv-btn-p {
+    width: 50px;
+}
+
+.rv-btn-m {
+    width: 85px;
+}
+
+.rv-btn-g {
+    width: 110px;
+}
+
+.rv-btn-um {
+    background: #000099 !important;
+}
+
+.rv-btn-dois {
+    background: #009900 !important;
+}
+
+.rv-btn-tres {
+    background: red !important;
+}
+
+
+/* Float */
+
+.rv-direita {
+    float: right;
+}
+
+.rv-esquerda {
+    float: left;
+}
+
+
+/* Margens */
+
+.rv-margem-5 {
+    margin: 5px;
+}
+
+.rv-margem-10 {
+    margin: 10px;
+}
+
+.rv-margem-15 {
+    margin: 15px;
+}
+
+.rv-margem-20 {
+    margin: 20px;
+}
+
+.rv-margem-25 {
+    margin: 25px;
+}
+
+.rv-margem-30 {
+    margin: 30px;
+}
