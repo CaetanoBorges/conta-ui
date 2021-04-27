@@ -86,11 +86,13 @@
 
                 </div>
                 <div class="rv-modal-pes">
-                    <span class="rv-btn rv-btn-g rv-btn-dois rv-esquerda rv-margem-20" >Voltar</span>
-                    <span class="rv-btn rv-btn-g rv-btn-um rv-direita rv-margem-20" >Continuar</span>
+                    <span class="rv-btn rv-btn-g rv-btn-dois rv-margem-10" >Voltar</span>
+                    <span class="rv-btn rv-btn-g rv-btn-um rv-margem-10" >Continuar</span>
                 </div>
             </div>
         </div>
+
+        <script src="_js/jquery.js"></script>
 </body>
 
 </html>

@@ -50,8 +50,9 @@
 
 .rv-modal-pes {
     width: 100%;
-    height: 10px;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
