@@ -187,3 +187,16 @@
  .acao-card:hover {
      background: #eaeaea;
  }
+ 
+ .menu-dentro {
+     padding: 5px;
+ }
+ 
+ .menu-dentro li {
+     padding: 5px;
+     cursor: pointer;
+ }
+ 
+ .menu-dentro li:hover {
+     background: rgba(0, 0, 0, .1)
+ }

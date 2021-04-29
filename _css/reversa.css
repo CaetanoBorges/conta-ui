@@ -1,11 +1,11 @@
 /* Modal */
 
 .rv-modal {
-    display: block;
+    display: none;
 }
 
 .rv-modal-fundodetras {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -14,12 +14,31 @@
     z-index: 2;
 }
 
+.rv-modal-p {
+    width: 30% !important;
+    top: 10vh !important;
+    left: 35% !important;
+}
+
+.rv-modal-m {
+    width: 50% !important;
+    top: 10vh !important;
+    left: 25% !important;
+}
+
+.rv-modal-g {
+    width: 80% !important;
+    top: 10vh !important;
+    left: 10% !important;
+}
+
 .rv-modal-conteudo {
-    position: absolute;
+    position: fixed;
     top: 10vh;
     left: 20%;
     width: 60%;
-    height: 80vh;
+    max-height: 80vh;
+    min-height: fit-content;
     background: #fff;
     z-index: 3;
     border: 1px solid #7a7a7a7a;
@@ -27,9 +46,10 @@
 }
 
 .rv-modal-cabecalho {
-    width: 100%;
-    height: 10%;
-    border-bottom: 1px solid #aaa;
+    width: 95%;
+    padding: 2.5%;
+    min-height: 15px;
+    border-bottom: 1px solid #eaeaea;
     position: relative;
     display: flex;
     align-items: center;
@@ -41,11 +61,13 @@
 }
 
 .rv-modal-corpo {
-    width: 100%;
-    height: 80%;
+    width: 95%;
+    max-height: 80%;
+    min-height: 30%;
     display: flex;
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid #eaeaea;
     position: relative;
+    padding: 2.5%;
 }
 
 .rv-modal-pes {
@@ -140,4 +162,18 @@
 
 .rv-margem-30 {
     margin: 30px;
+}
+
+
+/* CLASSES */
+
+.rv-flex-centro {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rv-largura-100 {
+    width: 100% !important;
 }

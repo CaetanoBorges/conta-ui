@@ -1,4 +1,22 @@
 (function(rv) {
+    //MODAL 
+    rv(".rv-esconde-modal, .rv-modal-fundodetras").click(function() {
+        rv(this).parents('.rv-modal').hide();
+    })
+
+    rv("[tipo='rv-aciona-modal']").click(function(event) {
+        event.preventDefault();
+        var qual = rv(this).attr('qual');
+        rv(qual).show();
+    })
+
+
+
+
+
+
+
+    //---------------------------------------------------------------------
     rv.fn.ola = function(opcoes) {
 
         //Opcções padrão
@@ -6,4 +24,4 @@
 
         return this.append('Ola ' + def.nome);
     }
-}(reversa))
+})(rv)
