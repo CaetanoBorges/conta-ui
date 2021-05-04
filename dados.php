@@ -2,11 +2,7 @@
 <html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="_css/reversa.css">
-    <link rel="stylesheet" href="_css/aproveitado.css">
-    <link rel="stylesheet" href="_css/one.css">
+    <?php include("_partes/head.php") ?>
     <title>Dados pessoais</title>
 </head>
 
@@ -227,8 +223,7 @@
         </div>
     </div>
 
-    <script src="_js/jquery.js"></script>
-    <script src="_js/reversa.js"></script>
+   <?php include("_partes/scripts.php") ?>
 </body>
 
 </html>
