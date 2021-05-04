@@ -15,7 +15,7 @@
     <div class="corpo">
         <div class="corpo-topo">
             <p class="p-grande">Cuidar da sua segurança, também é importante para nós</p>
-            <p>Mantenha a tua palavra-passe e o teu codigo super sempre seguros. Mantendo-os sempre secretos, não
+            <p>Mantenha a tua palavra-passe e o teu codigo de seis digitos sempre seguros. Mantendo-os sempre secretos, não
                 partilhando com ninguém.</p>
         </div>
 
@@ -43,17 +43,17 @@
                         </style>
                         <span class="span">
                             <input type="password" class="input-entrar rv-btn" placeholder="Codigo antigo"
-                                class="passUm">
+                                class="passUm" maxlength="6">
                             <i><img src="icones/olho.png" class="passUmVer"></i>
                         </span>
                         <span class="span">
                             <input type="password" class="input-entrar rv-btn" placeholder="Codigo novo"
-                                class="passUm">
+                                class="passUm" maxlength="6">
                             <i><img src="icones/olho.png" class="passUmVer"></i>
                         </span>
                         <span class="span">
                             <input type="password" class="input-entrar rv-btn" placeholder="Repetir codigo novo"
-                                class="passUm">
+                                class="passUm" maxlength="6">
                             <i><img src="icones/olho.png" class="passUmVer"></i>
                         </span>
 
