@@ -10,12 +10,12 @@ Array.prototype.forEach.call(inputs, function(input) {
             console.log(e.target.value);
         } else {
             var r = "\'"
-            fileName = e.target.value.split("\'").pop();
+            fileName = e.target.value.slice(-17);
             console.log(fileName);
             if (fileName) {
-                label.innerHTML = fileName;
+                label.innerHTML = "..." + fileName;
             } else {
-                label.innerHTML = labelVal;
+                label.innerHTML = "..." + labelVal;
             }
         }
     });
