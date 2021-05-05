@@ -127,6 +127,21 @@
 }
 
 
+/* CORES DE TEXTOS */
+
+.rv-txt-cl-um {
+    color: #000099 !important;
+}
+
+.rv-txt-cl-dois {
+    color: #009900 !important;
+}
+
+.rv-txt-cl-tres {
+    color: red !important;
+}
+
+
 /* Float */
 
 .rv-direita {
@@ -178,7 +193,7 @@
     width: 100% !important;
 }
 
-.rv-texto-centro {
+.rv-txt-centro {
     text-align: center !important;
 }
 
