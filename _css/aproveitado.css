@@ -8,6 +8,7 @@
     text-align: center;
     clear: both;
     border: 1px solid #ddd6d6;
+    cursor: pointer;
 }
 
 .input-entrar:focus {

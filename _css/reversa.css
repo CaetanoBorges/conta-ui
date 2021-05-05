@@ -177,3 +177,18 @@
 .rv-largura-100 {
     width: 100% !important;
 }
+
+.rv-texto-centro {
+    text-align: center !important;
+}
+
+.rv-cursor {
+    cursor: pointer !important
+}
+
+
+/* COLLAPSE */
+
+.rv-collapse {
+    display: none;
+}

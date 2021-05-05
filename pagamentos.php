@@ -71,38 +71,58 @@
                 </li>
                 <li tipo="rv-aciona-modal" qual="#registos-senha">
                     Telefone: 947436662
-                    
+
                 </li>
                 <li tipo="rv-aciona-modal" qual="#registos-senha">
-                   Telefone: 921797626
+                    Telefone: 921797626
                 </li>
             </ul>
 
 
         </div>
+        <div class="limpa"></div>
     </div>
-     <!-- -->
+    <!-- -->
     <div class="rv-modal" id="app">
         <div class="rv-modal-fundodetras"></div>
-        <div class="rv-modal-conteudo rv-modal-p">
+        <div class="rv-modal-conteudo rv-modal-g">
             <div class="rv-modal-cabecalho">
-                <h3>Registros do código de seis digitos</h3>
+                <h3>Nome da app</h3>
                 <span class="rv-btn-r rv-btn-tres rv-esconde-modal" style="position:absolute;top:1vh;right:1%;"></span>
             </div>
             <div class="rv-modal-corpo">
                 <div class="rv-flex-centro">
 
                     <div>
-                        <div class="div-centro">
+
+                        <div class="dividir-corpo esquerda">
+                            <p class="p-grande rv-cursor rv-texto-centro" tipo="rv-aciona-collapse" qual="#registro-sub">Registro de subscrições
+                            </p>
+
+                            <div class="rv-collapse" id="registro-sub">
+                                <ul class="lista-numerica">
+                                    <li></li>
+                                </ul>
+                            </div>
+
                         </div>
-                        
+                        <div class="dividir-corpo direita">
+                            <p class="p-grande rv-texto-centro">Submeter pagamento</p>
+                            <input type="file" class="input-entrar">
+                            <select name="" id="" class="input-entrar">
+                                <option value="0">Selecionar tempo</option>
+                                <option value="s">Semestral</option>
+                                <option value="a">Anual</option>
+                            </select>
+                            <button class="input-entrar">Submeter</button>
+                        </div>
+
                     </div>
 
                 </div>
             </div>
             <div class="rv-modal-pes">
                 <span class="rv-btn rv-btn-g rv-btn-dois rv-margem-10 rv-esconde-modal">Voltar</span>
-                <span class="rv-btn rv-btn-g rv-btn-um rv-margem-10">Continuar</span>
             </div>
         </div>
     </div>

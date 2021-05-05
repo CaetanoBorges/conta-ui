@@ -10,6 +10,12 @@
         rv(qual).show();
     })
 
+    rv("[tipo='rv-aciona-collapse']").click(function(event) {
+        event.preventDefault();
+        var qual = rv(this).attr('qual');
+        rv(qual).slideToggle();
+    })
+
 
 
 
