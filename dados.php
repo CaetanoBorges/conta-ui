@@ -20,7 +20,11 @@
         </div>
 
         <div class="dividir-corpo esquerda">
+            <img src="icones/pessoa.png" style="width:50%;border-radius:50%;">
             <ul class="menu-dentro">
+                <li tipo="rv-aciona-modal" qual="#nome">
+                    Atualisar foto
+                </li>
                 <li tipo="rv-aciona-modal" qual="#nome">
                     Alterar nome e apelido
                 </li>
