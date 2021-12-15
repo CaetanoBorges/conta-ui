@@ -181,7 +181,7 @@
                     <div>
                         <div class="div-centro">
                         </div>
-                        <input type="email" placeholder="Email" class="input-entrar bckgrnd-input rv-btn" id="email">
+                        <input type="email" placeholder="Email" class="input-entrar bckgrnd-input rv-btn" id="iemail">
                     </div>
 
                 </div>
@@ -206,8 +206,7 @@
                     <div>
                         <div class="div-centro">
                         </div>
-                        <input type="number" placeholder="Telefone" class="input-entrar bckgrnd-input rv-btn"
-                            id="telefone">
+                        <input type="number" placeholder="Telefone" class="input-entrar bckgrnd-input rv-btn" id="itelefone">
                     </div>
 
                 </div>

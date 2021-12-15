@@ -9,6 +9,11 @@ function pegaDados(token) {
         $("#Dia").val(obj['dia_nascimento']);
         $("#Ano").val(obj['ano_nascimento']);
 
+        $("#iemail").val(obj['email']);
+        $("#itelefone").val(obj['telefone']);
+        //$("#Ano").val(obj['ano_nascimento']);
+
+
         var meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
 
         $("#mes").html(meses);
