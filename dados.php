@@ -255,7 +255,7 @@
     </div>
 
    <?php include("_partes/scripts.php") ?>
-   <<script src="_js/dados/dados.js"></script>
+   <script src="_js/dados/dados.js"></script>
 </body>
 
 </html>
