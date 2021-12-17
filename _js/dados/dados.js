@@ -108,7 +108,7 @@ function localizacao(prov, mun, bairro, territorios) {
                     ${municipios}
                 </select>
             </div>
-            <input type="text" class="input-entrar rv-btn" placeholder="Bairro e rua" value="${bairro}" id="ibairro">
+            <input type="text" class="rv-btn input-entrar" placeholder="Bairro e rua" value="${bairro}" id="ibairro">
         `;
         return TEMPLATE;
 
@@ -134,7 +134,7 @@ function localizacao(prov, mun, bairro, territorios) {
                     
                 </select>
             </div>
-            <input type="text" class="input-entrar rv-btn" placeholder="Bairro e rua" value="${bairro}" id="ibairro">
+            <input type="text" class="rv-btn input-entrar" placeholder="Bairro e rua" value="${bairro}" id="ibairro">
         `;
         return TEMPLATE;
     }
