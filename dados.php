@@ -20,7 +20,7 @@
         </div>
 
         <div class="dividir-corpo esquerda">
-            <img src="icones/pessoa.png" style="width:50%;border-radius:50%;">
+            
             <ul class="menu-dentro">
                 <li tipo="rv-aciona-modal" qual="#foto">
                     Atualisar foto
@@ -51,17 +51,9 @@
                 <div>
                     <br>
                     <p class="p-medio">Localização</p>
-                        <div class="limpa" ></div>
-                        <select name="" class="genero outline-none rv-largura-100" >
-                            <option value="0">Província</option>
+                        <div class="localizacao-container">
 
-                        </select>
-                        <div class="limpa" ></div>
-                        <select name="" class="genero outline-none rv-largura-100" >
-                            <option value="0">Municipio</option>
-                        </select>
-                        <br>
-                        <input type="text" class="input-entrar rv-btn" placeholder="Bairro e rua">
+                        </div>
                 </div>
             
             </div>
@@ -90,6 +82,7 @@
 
                     <div>
                         <div class="div-centro">
+                            <img src="icones/pessoa.png" style="width:50%;border-radius:50%;" id="ifoto"> 
                         </div>
                         
                         <input type="file" class=" rv-btn">
@@ -147,16 +140,14 @@
                         <div class="div-centro">
                         </div>
                         <input type="number" placeholder="Dia" class="dia-mes" id="Dia">
-                        <select name="" class="mes outline-none" id="mes">
-                            
-                        </select>
+                        <div class="mes-container" style="width:100px;display:inline-block">
+
+                        </div>
                         <input type="number" placeholder="Ano" class="dia-mes" id="Ano">
                         <br>
-                        <select name="" class="genero outline-none" id="Genero">
-                            <option value="0">Género</option>
-                            <option value="m">Masculino</option>
-                            <option value="f">Feminino</option>
-                        </select>
+                        <div class="igenero-container">
+
+                        </div>
                     </div>
 
                 </div>
@@ -218,7 +209,12 @@
         </div>
     </div>
 
+    <!-- IMPORTAR TEMPLATES -->
+    
+    <link rel="import" href="js/dados/dados.templates.html">
+
    <?php include("_partes/scripts.php") ?>
+   <script src="_js/dados/territorios.js"></script>
    <script src="_js/dados/dados.js"></script>
 </body>
 
