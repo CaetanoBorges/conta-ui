@@ -17,6 +17,7 @@ jobs:
         server: ${{ secrets.SERVIDOR }}
         username: ${{ secrets.USUARIO }}
         password: ${{ secrets.PASSWORD }}
-        security: --insecure
+        security: loose
         protocol: ftps
         port: 21
+        git-ftp-args: --insecure
