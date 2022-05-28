@@ -17,4 +17,3 @@ jobs:
         ftp-server: ${{ secrets.SERVIDOR }}
         ftp-username: ${{ secrets.USUARIO }}
         ftp-password: ${{ secrets.PASSWORD }}
-        ftp-port: ${{ secrets.PORTA }}
