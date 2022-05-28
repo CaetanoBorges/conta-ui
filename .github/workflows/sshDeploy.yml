@@ -1,4 +1,4 @@
-name: cb
+name: Caetano Borges
 on:
   push:
     branches:
