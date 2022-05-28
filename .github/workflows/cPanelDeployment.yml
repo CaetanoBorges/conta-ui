@@ -17,4 +17,4 @@ jobs:
         server: ${{ secrets.SERVIDOR }}
         username: ${{ secrets.USUARIO }}
         password: ${{ secrets.PASSWORD }}
-        git-ftp-args: --insecure
+        security: loose
