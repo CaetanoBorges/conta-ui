@@ -17,6 +17,6 @@ jobs:
         server: ${{ secrets.SERVIDOR }}
         username: ${{ secrets.USUARIO }}
         password: ${{ secrets.PASSWORD }}
-        protocol: "ftps"
+        protocol: "ftp"
         port: 21
         
