@@ -11,9 +11,10 @@ jobs:
     - uses: actions/checkout@v2.1.0
       with: 
         fetch-depth: 2
-    - name: FTP-Deploy
+    - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
         server: ${{ secrets.SERVIDOR }}
         username: ${{ secrets.USUARIO }}
         password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORTA }}
