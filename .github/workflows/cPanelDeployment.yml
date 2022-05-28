@@ -14,10 +14,7 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ${{ secrets.SERVIDOR }}
-        username: ${{ secrets.USUARIO }}
-        password: ${{ secrets.PASSWORD }}
-        security: loose
-        protocol: ftps
-        port: 21
+        ftp-server: ${{ secrets.SERVIDOR }}
+        ftp-username: ${{ secrets.USUARIO }}
+        ftp-password: ${{ secrets.PASSWORD }}
         git-ftp-args: --insecure
