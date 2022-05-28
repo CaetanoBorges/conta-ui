@@ -18,3 +18,5 @@ jobs:
         username: ${{ secrets.USUARIO }}
         password: ${{ secrets.PASSWORD }}
         security: loose
+        protocol: ftps
+        port: 21
