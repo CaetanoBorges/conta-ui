@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<script>
-    var token = (window.location.href).split("ftpadbc=")[1];
-    if(token != null || token != ""){
-        localStorage.setItem("ftpadb-binga", token);
-    }
-</script>
-<?php
-    $TOKEN = explode("ftpadbc=",$_SERVER['REQUEST_URI'])[1];
-    echo $TOKEN;
+<?php include("_partes/token.php"); ?>
+<?php include("controladores/Bin.php"); ?>
+<?php include("controladores/inicio.php"); ?>
+
+<?php 
+echo $TOKEN;
 ?>
 <html lang="pt">
 
