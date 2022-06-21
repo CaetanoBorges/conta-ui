@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php include("_partes/token.php"); ?>
+<?php include("controladores/Bin.php"); ?>
+<?php include("controladores/inicio.php"); ?>
 <html lang="pt">
 
 <head>

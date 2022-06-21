@@ -1,8 +1,8 @@
 function pegaDados(token) {
-    $.get("http://127.0.0.1/binga/conta-api/dados/dados.php", { objecto: token }).done(function(res) {
+    $.get("http://127.0.0.1/binga/conta-api/Dados/dados.php", { token: token }).done(function(res) {
 
-        var obj = JSON.parse(res);
-        console.log(obj);
+        var objecto = JSON.parse(res);
+        var obj = JSON.parse(objecto.payload);
 
         $("#inome").val(obj['nome']);
         $("#iapelido").val(obj['apelido']);
@@ -12,7 +12,7 @@ function pegaDados(token) {
         $("#iemail").val(obj['email']);
         $("#itelefone").val(obj['telefone']);
         //$("#Ano").val(obj['ano_nascimento']);
-        $("#ifoto").attr("src", "http://127.0.0.1/binga/conta-api/foto/" + obj['foto'])
+        $("#ifoto").attr("src", "http://127.0.0.1/binga/conta-api/Dados/Foto/" + obj['foto'])
 
         $("#igenero");
 
@@ -159,6 +159,7 @@ function provinciaChange(prov, territorios) {
 
 
 $(document).ready(function() {
-    pegaDados('Qw17LWU2fOKhJA8uzJWGzABR21d9BZdT3jmSEfIcvdBAaEcSM1S2HvabxRdBUVDPX\/YuXOQx8fm5DTbO3yWAXGq6SUPnuBYMlV4vsg==.NmI2NTcxNzA2ODM2NzczNTMyNGI2NTU4Mzg3ODM2MzY3NDU5N2EzNTU0NGY1ODRjNTI0NjQ3NDc2ZTQ0NmE2NTY0NjU3MjVhNmI1NTY2NTA=');
+    var token = localStorage.getItem("ftpadb-binga");
+    pegaDados(token);
 
 })

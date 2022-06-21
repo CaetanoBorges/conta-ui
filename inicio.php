@@ -3,16 +3,12 @@
 <?php include("controladores/Bin.php"); ?>
 <?php include("controladores/inicio.php"); ?>
 
-<?php 
-echo $TOKEN;
-?>
 <html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="_css/one.css">
-    <title>Conta</title>
+    
+<?php include("_partes/head.php") ?>
+    <title>Conta Binga</title>
 </head>
 
 <body>
@@ -23,16 +19,16 @@ echo $TOKEN;
 
     <div class="corpo">
         <div class="corpo-topo">
-            <img src="icones/default.png">
-            <p class="p-grande">Olá, Nome Usuario</p>
-            <p>Faça a gestão das suas informações e da segurança para utilizar os serviços www da forma mais adequada
+            <img src="<?php echo $bin::$endpoint."Foto/".$dadosUsuario['foto']; ?>">
+            <p class="p-grande">Olá, <?php echo $dadosUsuario['nome'] ?></p>
+            <p>Faça a gestão das suas informações e da segurança para utilizar os serviços Binga da forma mais adequada
                 para si.</p>
         </div>
 
         <div class="dividir-corpo esquerda">
 
 
-            <a href="">
+            
                 <div class="card-inicio">
                     <div class="escritas-card esquerda">
                         <p class="p-medio"> Informações </p><br>
@@ -41,14 +37,16 @@ echo $TOKEN;
                     <div class="imagem-card">
                         <img src="icones/informacoesdois.png" alt="">
                     </div>
-                    <div class="acao-card baixo">
-                        <p>Tomar uma acao viavel</p>
-                    </div>
+                    <a href="informacoes.php?ftpadbc=<?php echo $TOKEN ?>">
+                        <div class="acao-card baixo">
+                            <p>Tomar uma ação viável</p>
+                        </div>
+                    </a>
                 </div>
-            </a>
+            
 
             
-            <a href="">
+            
                 <div class="card-inicio">
                     <div class="escritas-card esquerda">
                         <p class="p-medio"> Dados pessoais </p><br>
@@ -57,18 +55,20 @@ echo $TOKEN;
                     <div class="imagem-card">
                         <img src="icones/dados.png" alt="">
                     </div>
-                    <div class="acao-card baixo">
-                        <p>Tomar uma acao viavel</p>
-                    </div>
+                    <a href="dados.php?ftpadbc=<?php echo $TOKEN ?>">
+                        <div class="acao-card baixo">
+                            <p>Tomar uma ação viável</p>
+                        </div>
+                    </a>
                 </div>
-            </a>
+            
 
         </div>
 
         <div class="dividir-corpo direita">
 
             
-            <a href="">
+            
                 <div class="card-inicio">
                     <div class="escritas-card esquerda">
                         <p class="p-medio"> Segurança </p><br>
@@ -77,27 +77,31 @@ echo $TOKEN;
                     <div class="imagem-card">
                         <img src="icones/cadeado.png" alt="">
                     </div>
-                    <div class="acao-card baixo">
-                        <p>Tomar uma acao viavel</p>
-                    </div>
+                    <a href="seguranca.php?ftpadbc=<?php echo $TOKEN ?>">
+                        <div class="acao-card baixo">
+                            <p>Tomar uma ação viável</p>
+                        </div>
+                    </a>
                 </div>
-            </a>
+            
 
             
-            <a href="">
+            
                 <div class="card-inicio">
                     <div class="escritas-card esquerda">
-                        <p class="p-medio"> Pagamentos e subscrição </p><br>
+                        <p class="p-medio"> Pagamentos e subscrições </p><br>
                         <p>Controle os seus pagamentos e subscrições dos nossos serviços.</p>
                     </div>
                     <div class="imagem-card">
                         <img src="icones/pagamentosdois.png" alt="">
                     </div>
-                    <div class="acao-card baixo">
-                        <p>Tomar uma acao viavel</p>
-                    </div>
+                    <a href="pagamentos.php?ftpadbc=<?php echo $TOKEN ?>">
+                        <div class="acao-card baixo">
+                            <p>Tomar uma ação viável</p>
+                        </div>
+                    </a>
                 </div>
-            </a>
+            
 
         </div>
 

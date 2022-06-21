@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php include("_partes/token.php"); ?>
+<?php include("controladores/Bin.php"); ?>
+<?php include("controladores/inicio.php"); ?>
 <html lang="pt">
 
 <head>
@@ -23,7 +26,7 @@
             
             <ul class="menu-dentro">
                 <li tipo="rv-aciona-modal" qual="#foto">
-                    Atualisar foto
+                    Atualizar foto
                 </li>
                 <li tipo="rv-aciona-modal" qual="#nome">
                     Alterar nome e apelido
@@ -32,10 +35,10 @@
                     Alterar género e nascimento
                 </li>
                 <li tipo="rv-aciona-modal" qual="#email">
-                    Atualisar email
+                    Atualizar email
                 </li>
                 <li tipo="rv-aciona-modal" qual="#telefone">
-                Atualisar telefone
+                Atualizar telefone
                 </li>
             </ul>
 
@@ -59,7 +62,7 @@
             </div>
                 <a href="" tipo="rv-aciona-modal" qual="#">
                     <div class="acao-card baixo">
-                        <p>Atualisar endereço</p>
+                        <p>Atualizar endereço</p>
                     </div>
                 </a>
             </div>
@@ -102,7 +105,7 @@
         <div class="rv-modal-fundodetras"></div>
         <div class="rv-modal-conteudo rv-modal-p">
             <div class="rv-modal-cabecalho">
-                <h3>Atualisar nome e apelido</h3>
+                <h3>Atualizar nome e apelido</h3>
                 <span class="rv-btn-r rv-btn-tres rv-esconde-modal" style="position:absolute;top:1vh;right:1%;"></span>
             </div>
             <div class="rv-modal-corpo">
@@ -130,7 +133,7 @@
         <div class="rv-modal-fundodetras"></div>
         <div class="rv-modal-conteudo rv-modal-p">
             <div class="rv-modal-cabecalho">
-                <h3>Atualisar nascimento</h3>
+                <h3>Atualizar nascimento</h3>
                 <span class="rv-btn-r rv-btn-tres rv-esconde-modal" style="position:absolute;top:1vh;right:1%;"></span>
             </div>
             <div class="rv-modal-corpo">
@@ -163,7 +166,7 @@
         <div class="rv-modal-fundodetras"></div>
         <div class="rv-modal-conteudo rv-modal-p">
             <div class="rv-modal-cabecalho">
-                <h3>Atualisar email</h3>
+                <h3>Atualizar email</h3>
                 <span class="rv-btn-r rv-btn-tres rv-esconde-modal" style="position:absolute;top:1vh;right:1%;"></span>
             </div>
             <div class="rv-modal-corpo">
@@ -188,7 +191,7 @@
         <div class="rv-modal-fundodetras"></div>
         <div class="rv-modal-conteudo rv-modal-p">
             <div class="rv-modal-cabecalho">
-                <h3>Atualisar telefone</h3>
+                <h3>Atualizar telefone</h3>
                 <span class="rv-btn-r rv-btn-tres rv-esconde-modal" style="position:absolute;top:1vh;right:1%;"></span>
             </div>
             <div class="rv-modal-corpo">

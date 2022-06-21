@@ -4,4 +4,5 @@ $url = $bin::$endpoint;
 
 $response = $bin::get($url."dados.php", ['token'=>$TOKEN]);
 
-print_r(json_decode($response));
+$dados = (array) json_decode($response);
+$dadosUsuario = (array) json_decode($dados['payload']);
