@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <?php include("_partes/token.php"); ?>
 <?php include("controladores/Bin.php"); ?>
-<?php include("controladores/inicio.php"); ?>
+<?php include("controladores/Provincias.php"); ?>
+<?php include("controladores/dados.php"); ?>
 <html lang="pt">
 
 <head>
@@ -42,7 +43,11 @@
                 </li>
             </ul>
 
-
+            <?php 
+                //echo mes($dadosUsuario['mes_nascimento']); 
+                //echo localizacao($dadosUsuario['provincia'], $dadosUsuario['municipio'], $dadosUsuario['bairro_rua'], $dataStoreProvincias);
+                //echo igenero($dadosUsuario['genero']);
+            ?>
 
         </div>
 
