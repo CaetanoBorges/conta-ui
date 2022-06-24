@@ -122,7 +122,7 @@
                         <div class="div-centro">
                         </div>
                         <input type="text" placeholder="Nome próprio" class="input-entrar bckgrnd-input rv-btn" id="inome" value="<?php echo $dadosUsuario['nome']; ?>">
-                        <input type="text" placeholder="Apelido" class="input-entrar bckgrnd-input rv-btn" id="iapelido" value="<?php echo $dadosUsuario['nome']; ?>">
+                        <input type="text" placeholder="Apelido" class="input-entrar bckgrnd-input rv-btn" id="iapelido" value="<?php echo $dadosUsuario['apelido']; ?>">
                     </div>
 
                 </div>
@@ -149,12 +149,12 @@
                         </div>
                         <input type="number" placeholder="Dia" class="dia-mes" id="Dia"  value="<?php echo $dadosUsuario['dia_nascimento']; ?>">
                         <div class="mes-container" style="width:100px;display:inline-block">
-
+                            <?php echo mes($dadosUsuario['mes_nascimento']); ?>
                         </div>
-                        <input type="number" placeholder="Ano" class="dia-mes" id="Ano">
+                        <input type="number" placeholder="Ano" class="dia-mes" id="Ano" value="<?php echo $dadosUsuario['ano_nascimento']; ?>">
                         <br>
                         <div class="igenero-container">
-
+                            <?php echo igenero($dadosUsuario['genero']); ?>
                         </div>
                     </div>
 
@@ -180,7 +180,7 @@
                     <div>
                         <div class="div-centro">
                         </div>
-                        <input type="email" placeholder="Email" class="input-entrar bckgrnd-input rv-btn" id="iemail">
+                        <input type="email" placeholder="Email" class="input-entrar bckgrnd-input rv-btn" id="iemail" value="<?php echo $dadosUsuario['email']; ?>">
                     </div>
 
                 </div>
@@ -205,7 +205,7 @@
                     <div>
                         <div class="div-centro">
                         </div>
-                        <input type="number" placeholder="Telefone" class="input-entrar bckgrnd-input rv-btn" id="itelefone">
+                        <input type="number" placeholder="Telefone" class="input-entrar bckgrnd-input rv-btn" id="itelefone" value="<?php echo $dadosUsuario['telefone']; ?>">
                     </div>
 
                 </div>
