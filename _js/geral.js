@@ -6,3 +6,9 @@ function _loader(binario = false) {
     }
 
 }
+
+function notifica(qual) {
+    var html = new debliwuinotificacao();
+    html.sms(qual);
+    $("body").append(html);
+}

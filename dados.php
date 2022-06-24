@@ -221,6 +221,7 @@
     </div>
 
 
+   <script src="_js/componentes/notificacao/notificacao.js"></script>
    <?php include("_partes/scripts.php") ?>
    <script src="_js/dados/territorios.js"></script>
    <script src="_js/dados/dados.js"></script>
