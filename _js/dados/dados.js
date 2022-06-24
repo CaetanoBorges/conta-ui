@@ -22,12 +22,7 @@ function pegaDados(token) {
         $(".igenero-container").html(igenero(obj['genero']));
         $(".localizacao-container").html(localizacao(obj['provincia'], obj['municipio'], obj['bairro_rua'], provinciasMunicipios));
 
-        $('#iprovincia').change(function() {
-            var valor = $(this).val();
-            console.log(valor);
-            $(".municipio-container").html(provinciaChange(valor, provinciasMunicipios));
 
-        })
     })
 }
 
@@ -42,7 +37,7 @@ function provinciaChange(prov, territorios) {
 
     var TEMPLATE = `
     <select name="" class="genero outline-none rv-largura-100" id="imunicipio">
-    <option value="0">Seleciona uma provincia</option>
+    <option value="0">Seleciona um município</option>
         <option value="${capital}">${capital}</option>
         ${municipios}
     </select>
@@ -53,6 +48,12 @@ function provinciaChange(prov, territorios) {
 
 $(document).ready(function() {
     var token = localStorage.getItem("ftpadb-binga");
-    pegaDados(token);
+    //pegaDados(token);
+    $('#iprovincia').change(function() {
+        var valor = $(this).val();
+        console.log(valor);
+        $(".municipio-container").html(provinciaChange(valor, provinciasMunicipios));
+
+    });
 
 })

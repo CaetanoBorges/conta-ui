@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+
 <?php include("_partes/token.php"); ?>
 <?php include("controladores/Bin.php"); ?>
 <?php include("controladores/Provincias.php"); ?>
 <?php include("controladores/dados.php"); ?>
+
 <html lang="pt">
 
 <head>
@@ -60,7 +62,7 @@
                     <br>
                     <p class="p-medio">Localização</p>
                         <div class="localizacao-container">
-
+                            <?php echo localizacao($dadosUsuario['provincia'], $dadosUsuario['municipio'], $dadosUsuario['bairro_rua'], $dataStoreProvincias); ?>
                         </div>
                 </div>
             
@@ -90,7 +92,7 @@
 
                     <div>
                         <div class="div-centro">
-                            <img src="icones/pessoa.png" style="width:50%;border-radius:50%;" id="ifoto"> 
+                            <img src="<?php echo $bin::$endpoint."Foto/".$dadosUsuario['foto']; ?>" style="width:50%;border-radius:50%;" id="ifoto"> 
                         </div>
                         
                         <input type="file" class=" rv-btn">
@@ -119,10 +121,8 @@
                     <div>
                         <div class="div-centro">
                         </div>
-                        <input type="text" placeholder="Nome próprio" class="input-entrar bckgrnd-input rv-btn"
-                            id="inome">
-                        <input type="text" placeholder="Apelido" class="input-entrar bckgrnd-input rv-btn" 
-                            id="iapelido">
+                        <input type="text" placeholder="Nome próprio" class="input-entrar bckgrnd-input rv-btn" id="inome" value="<?php echo $dadosUsuario['nome']; ?>">
+                        <input type="text" placeholder="Apelido" class="input-entrar bckgrnd-input rv-btn" id="iapelido" value="<?php echo $dadosUsuario['nome']; ?>">
                     </div>
 
                 </div>
@@ -147,7 +147,7 @@
                     <div>
                         <div class="div-centro">
                         </div>
-                        <input type="number" placeholder="Dia" class="dia-mes" id="Dia">
+                        <input type="number" placeholder="Dia" class="dia-mes" id="Dia"  value="<?php echo $dadosUsuario['dia_nascimento']; ?>">
                         <div class="mes-container" style="width:100px;display:inline-block">
 
                         </div>
