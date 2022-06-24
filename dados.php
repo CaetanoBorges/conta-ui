@@ -14,6 +14,7 @@
 
 <body>
     <?php
+        include("_partes/load.php");
         include("_partes/topo.php");
         include("_partes/lado.php");
    ?>
@@ -92,10 +93,12 @@
 
                     <div>
                         <div class="div-centro">
-                            <img src="<?php echo $bin::$endpoint."Foto/".$dadosUsuario['foto']; ?>" style="width:50%;border-radius:50%;" id="ifoto"> 
+                            <img src="<?php echo $bin::$endpoint."Foto/".$dadosUsuario['foto']; ?>" style="width:50%;border-radius:50%;display:block;margin:10px auto;" id="ifoto"> 
                         </div>
                         
-                        <input type="file" class=" rv-btn">
+
+                        <input type="file" class=" rv-btn" id="foto-perfil" style="display: none;">
+                        <label for="foto-perfil" style="cursor:pointer;" class="foto-perfill">Escolher foto</label>
                     </div>
 
                 </div>
@@ -217,9 +220,6 @@
         </div>
     </div>
 
-    <!-- IMPORTAR TEMPLATES -->
-    
-    <link rel="import" href="js/dados/dados.templates.html">
 
    <?php include("_partes/scripts.php") ?>
    <script src="_js/dados/territorios.js"></script>
