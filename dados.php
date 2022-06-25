@@ -69,7 +69,7 @@
             
             </div>
                 <a href="" tipo="rv-aciona-modal" qual="#">
-                    <div class="acao-card baixo">
+                    <div class="acao-card baixo" onclick="alterarLocalizacao()">
                         <p>Atualizar endereço</p>
                     </div>
                 </a>
@@ -132,7 +132,7 @@
             </div>
             <div class="rv-modal-pes">
                 <span class="rv-btn rv-btn-g rv-btn-dois rv-margem-10 rv-esconde-modal">Voltar</span>
-                <span class="rv-btn rv-btn-g rv-btn-um rv-margem-10">Continuar</span>
+                <span class="rv-btn rv-btn-g rv-btn-um rv-margem-10" onclick="alterarNomeApelido()">Continuar</span>
             </div>
         </div>
     </div>
@@ -150,11 +150,11 @@
                     <div>
                         <div class="div-centro">
                         </div>
-                        <input type="number" placeholder="Dia" class="dia-mes" id="Dia"  value="<?php echo $dadosUsuario['dia_nascimento']; ?>">
+                        <input type="number" placeholder="Dia" class="dia-mes" id="dia"  value="<?php echo $dadosUsuario['dia_nascimento']; ?>">
                         <div class="mes-container" style="width:100px;display:inline-block">
                             <?php echo mes($dadosUsuario['mes_nascimento']); ?>
                         </div>
-                        <input type="number" placeholder="Ano" class="dia-mes" id="Ano" value="<?php echo $dadosUsuario['ano_nascimento']; ?>">
+                        <input type="number" placeholder="Ano" class="dia-mes" id="ano" value="<?php echo $dadosUsuario['ano_nascimento']; ?>">
                         <br>
                         <div class="igenero-container">
                             <?php echo igenero($dadosUsuario['genero']); ?>
@@ -165,7 +165,7 @@
             </div>
             <div class="rv-modal-pes">
                 <span class="rv-btn rv-btn-g rv-btn-dois rv-margem-10 rv-esconde-modal">Voltar</span>
-                <span class="rv-btn rv-btn-g rv-btn-um rv-margem-10">Continuar</span>
+                <span class="rv-btn rv-btn-g rv-btn-um rv-margem-10" onclick="alterarNascimentoGenero()">Continuar</span>
             </div>
         </div>
     </div>
@@ -182,6 +182,7 @@
 
                     <div>
                         <div class="div-centro">
+                            Muito cuidado ao alterar o email, pois é com ele que iniciará a sessão.
                         </div>
                         <input type="email" placeholder="Email" class="input-entrar bckgrnd-input rv-btn" id="iemail" value="<?php echo $dadosUsuario['email']; ?>">
                     </div>
@@ -190,7 +191,7 @@
             </div>
             <div class="rv-modal-pes">
                 <span class="rv-btn rv-btn-g rv-btn-dois rv-margem-10 rv-esconde-modal">Voltar</span>
-                <span class="rv-btn rv-btn-g rv-btn-um rv-margem-10">Continuar</span>
+                <span class="rv-btn rv-btn-g rv-btn-um rv-margem-10" onclick="alterarEmail()">Continuar</span>
             </div>
         </div>
     </div>
@@ -215,16 +216,22 @@
             </div>
             <div class="rv-modal-pes">
                 <span class="rv-btn rv-btn-g rv-btn-dois rv-margem-10 rv-esconde-modal">Voltar</span>
-                <span class="rv-btn rv-btn-g rv-btn-um rv-margem-10">Continuar</span>
+                <span class="rv-btn rv-btn-g rv-btn-um rv-margem-10" onclick="alterarTelefone()" >Continuar</span>
             </div>
         </div>
     </div>
 
 
-   <script src="_js/componentes/notificacao/notificacao.js"></script>
+  
    <?php include("_partes/scripts.php") ?>
    <script src="_js/dados/territorios.js"></script>
    <script src="_js/dados/dados.js"></script>
+   <script src="_js/dados/foto.js"></script>
+   <script src="_js/dados/localizacao.js"></script>
+   <script src="_js/dados/nomeApelido.js"></script>
+   <script src="_js/dados/nascimentoGenero.js"></script>
+   <script src="_js/dados/email.js"></script>
+   <script src="_js/dados/telefone.js"></script>
 </body>
 
 </html>
