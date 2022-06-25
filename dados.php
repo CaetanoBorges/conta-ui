@@ -93,11 +93,11 @@
 
                     <div>
                         <div class="div-centro">
-                            <img src="<?php echo $bin::$endpoint."Foto/".$dadosUsuario['foto']; ?>" style="width:50%;border-radius:50%;display:block;margin:10px auto;" id="ifoto"> 
+                            <img src="<?php echo $bin::$endpoint."Foto/".$dadosUsuario['foto']; ?>" style="width:50%;border-radius:50%;display:block;margin:10px auto;" id="ifoto" /> 
                         </div>
                         
 
-                        <input type="file" class=" rv-btn" id="foto-perfil" style="display: none;">
+                        <input type="file" class=" rv-btn" id="foto-perfil" style="display: none;"  accept="image/png, image/gif, image/jpeg">
                         <label for="foto-perfil" style="cursor:pointer;" class="foto-perfill">Escolher foto</label>
                     </div>
 
@@ -105,7 +105,7 @@
             </div>
             <div class="rv-modal-pes">
                 <span class="rv-btn rv-btn-g rv-btn-dois rv-margem-10 rv-esconde-modal">Voltar</span>
-                <span class="rv-btn rv-btn-g rv-btn-um rv-margem-10">Continuar</span>
+                <span class="rv-btn rv-btn-g rv-btn-um rv-margem-10" id="upload-foto">Continuar</span>
             </div>
         </div>
     </div>

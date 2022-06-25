@@ -58,7 +58,7 @@ class debliwuinotificacao extends HTMLElement {
 
         setTimeout(function() {
             fechar(esse);
-        }, 5000);
+        }, 10000);
     }
 
     sms(qual) {
