@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php include("_partes/token.php"); ?>
 <?php include("controladores/Bin.php"); ?>
-<?php include("controladores/inicio.php"); ?>
+<?php include("controladores/seguranca.php"); ?>
 <html lang="pt">
 
 <head>
@@ -18,7 +18,7 @@
     <div class="corpo">
         <div class="corpo-topo">
             <p class="p-grande">Cuidar da sua segurança, também é importante para nós</p>
-            <p>Mantenha a tua palavra-passe segura. Mantendo-a sempre secreta, não
+            <p>Mantenha a tua palavra-passe segura. Mantendo-a sempre secreta e atualizada, não
                 partilhando com ninguém.</p>
         </div>
         
@@ -49,26 +49,20 @@
                         <span class="span">
                             <input type="password" class="input-entrar rv-btn" placeholder="Senha antiga"
                                 class="passUm">
-                            <i><img src="icones/olho.png" class="passUmVer"></i>
                         </span>
                         <span class="span">
                             <input type="password" class="input-entrar rv-btn" placeholder="Senha nova"
                                 class="passUm">
-                            <i><img src="icones/olho.png" class="passUmVer"></i>
                         </span>
-                        <span class="span">
-                            <input type="password" class="input-entrar rv-btn" placeholder="Repetir senha nova"
-                                class="passUm">
-                            <i><img src="icones/olho.png" class="passUmVer"></i>
-                        </span>
-
-
+                        
+                        
+                        
                     </div>
 
                 </div>
                 <a href="" tipo="rv-aciona-modal" qual="#">
                     <div class="acao-card baixo">
-                        <p>Atualisar palavra-passe</p>
+                        <p>Atualizar palavra-passe</p>
                     </div>
                 </a>
             </div>
