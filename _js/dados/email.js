@@ -11,7 +11,7 @@ function alterarEmail() {
     }
 
     Bin.loader(1);
-    $.post(Bin.endpoint + 'alterarEmail.php', { token: token, email: $('#iemail').val() }).done(function(response) {
+    $.post(Bin.endpoint + 'Dados/alterarEmail.php', { token: token, email: $('#iemail').val() }).done(function(response) {
         var obj = JSON.parse(response);
         if (obj.ok) {
             Bin.notifica(obj.payload);

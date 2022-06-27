@@ -5,6 +5,7 @@
 <html lang="pt">
 
 <head>
+    <link rel="stylesheet" href="_css/passtrength.css">
     <?php include("_partes/head.php") ?>
     <title>Segurança</title>
 </head>
@@ -24,7 +25,7 @@
         
         <div class="dividir-corpo esquerda">
 
-            <div class="card-inicio">
+            <div class="card-inicio" style="height:300px">
                         <style>
                         .span {
                             width: 100%;
@@ -40,28 +41,28 @@
                         }
                         </style>
 
-                <div class="rv-flex-centro">
+                <div class="rv-flex-centro" style="height: fit-content !important;">
                     <div>
                         <br>
                         <p class="p-medio">Palavra-passe</p>
                         <div class="limpa"></div>
                         
                         <span class="span">
-                            <input type="password" class="input-entrar rv-btn" placeholder="Senha antiga"
-                                class="passUm">
+                            <input type="password" class="input-entrar rv-btn" placeholder="Senha antiga" id="antiga">
                         </span>
                         <span class="span">
-                            <input type="password" class="input-entrar rv-btn" placeholder="Senha nova"
-                                class="passUm">
+                            <input type="password" class="input-entrar rv-btn" placeholder="Senha nova" id="nova">
                         </span>
-                        
-                        
-                        
+                        <br>
+                        <div class="div-centro">
+                            Muito cuidado ao alterar a palavra passe, pois é com ela, em combinação com o email que iniciará a sessão.
+                        </div>
                     </div>
 
                 </div>
+                    
                 <a href="" tipo="rv-aciona-modal" qual="#">
-                    <div class="acao-card baixo">
+                    <div class="acao-card baixo" onclick="alteraPalavraPasse()">
                         <p>Atualizar palavra-passe</p>
                     </div>
                 </a>
@@ -93,6 +94,12 @@
 
                     <div>
                         <div class="div-centro">
+                            <ul>
+                                <?php
+                                    echo historicoPalavraPasse($seguranca);
+                                ?>
+                            </ul>
+                            
                         </div>
                         
                     </div>
@@ -101,26 +108,15 @@
             </div>
             <div class="rv-modal-pes">
                 <span class="rv-btn rv-btn-g rv-btn-dois rv-margem-10 rv-esconde-modal">Voltar</span>
-                <span class="rv-btn rv-btn-g rv-btn-um rv-margem-10">Continuar</span>
             </div>
         </div>
     </div>
    
-
     <?php include("_partes/scripts.php") ?>
+    <script src="_js/passtrength.js"></script>
+    <script src="_js/seguranca/palavraPasse.js"></script>
     <script>
-    const pswrdField = document.querySelector("span input[type='password']"),
-        toggleBtn = document.querySelector("span i");
-
-    toggleBtn.onclick = () => {
-        if (pswrdField.type == "password") {
-            pswrdField.type = "text";
-            toggleBtn.classList.add('ativo');
-        } else {
-            pswrdField.type = "password";
-            toggleBtn.classList.remove('ativo');
-        }
-    }
+   
     </script>
 </body>
 

@@ -21,7 +21,7 @@ $(document).ready(function() {
 
         Bin.loader(1);
         $.ajax({
-            url: Bin.endpoint + 'alterarFoto.php',
+            url: Bin.endpoint + 'Dados/alterarFoto.php',
             type: 'post',
             data: formulario,
             contentType: false,

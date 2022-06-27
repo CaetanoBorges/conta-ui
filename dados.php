@@ -182,7 +182,7 @@
 
                     <div>
                         <div class="div-centro">
-                            Muito cuidado ao alterar o email, pois é com ele que iniciará a sessão.
+                            Muito cuidado ao alterar o email, pois é com ele, em combinação com a palavra passe que iniciará a sessão.
                         </div>
                         <input type="email" placeholder="Email" class="input-entrar bckgrnd-input rv-btn" id="iemail" value="<?php echo $dadosUsuario['email']; ?>">
                     </div>
@@ -223,6 +223,7 @@
 
 
   
+   
    <?php include("_partes/scripts.php") ?>
    <script src="_js/dados/territorios.js"></script>
    <script src="_js/dados/dados.js"></script>

@@ -2,7 +2,7 @@ class Bin {
     constructor() {
 
     }
-    static endpoint = "http://127.0.0.1/binga/conta-api/Dados/";
+    static endpoint = "http://127.0.0.1/binga/conta-api/";
 
     static loader(binario = false) {
         if (binario) {

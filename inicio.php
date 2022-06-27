@@ -19,7 +19,7 @@
 
     <div class="corpo">
         <div class="corpo-topo">
-            <img src="<?php echo $bin::$endpoint."Foto/".$dadosUsuario['foto']; ?>">
+            <img src="<?php echo $bin::$endpoint."Dados/Foto/".$dadosUsuario['foto']; ?>">
             <p class="p-grande">Olá, <?php echo $dadosUsuario['nome'] ?></p>
             <p>Faça a gestão das suas informações e da segurança para utilizar os serviços Binga da forma mais adequada
                 para si.</p>

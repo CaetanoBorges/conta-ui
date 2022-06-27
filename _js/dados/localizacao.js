@@ -18,7 +18,7 @@ function provinciaChange(prov, territorios) {
 function alterarLocalizacao() {
 
     Bin.loader(1);
-    $.post(Bin.endpoint + 'alterarLocalizacao.php', { token: token, provincia: $('#iprovincia').val(), municipio: $('#imunicipio').val(), bairro: $('#ibairro').val() }).done(function(response) {
+    $.post(Bin.endpoint + 'Dados/alterarLocalizacao.php', { token: token, provincia: $('#iprovincia').val(), municipio: $('#imunicipio').val(), bairro: $('#ibairro').val() }).done(function(response) {
         console.log(response);
         var obj = JSON.parse(response);
         if (obj.ok) {
