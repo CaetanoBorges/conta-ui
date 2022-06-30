@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 $bin = new Bin();
 $url = $bin::$endpoint;
 
@@ -76,13 +77,13 @@ function localizacao($prov, $mun, $bairro, $territorios) {
 
         $TEMPLATE ='
             <div class="limpa" ></div>
-            <select name="" class="genero outline-none rv-largura-100" id="iprovincia">
+            <select name="" class="genero outline-none rv-largura-100" id="iprovincia" placeholder="Província">
                 <option value="'.$prov.'">'.$prov.'</option>
                 '.$provincias.'
             </select>
             <div class="limpa" ></div>
             <div class="municipio-container">
-                <select name="" class="genero outline-none rv-largura-100" id="imunicipio">
+                <select name="" class="genero outline-none rv-largura-100" id="imunicipio" placeholder="Município">
                     <option value="'.$municipio.'">'.$municipio.'</option>
                     <option value="'.$capital.'">'.$capital.'</option>
                     '.$municipios.'
@@ -105,13 +106,13 @@ function localizacao($prov, $mun, $bairro, $territorios) {
 
         $TEMPLATE = '
             <div class="limpa" ></div>
-            <select name="" class="genero outline-none rv-largura-100" id="iprovincia">
+            <select name="" class="genero outline-none rv-largura-100" id="iprovincia" placeholder="Província">
                 <option value="0">Seleciona uma provincia</option>
                 '.$provincias.'
             </select>
             <div class="limpa" ></div>
             <div class="municipio-container">
-                <select name="" class="genero outline-none rv-largura-100" id="imunicipio">
+                <select name="" class="genero outline-none rv-largura-100" id="imunicipio" placeholder="Município">
                     
                 </select>
             </div>

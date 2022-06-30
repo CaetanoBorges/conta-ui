@@ -93,7 +93,7 @@
 
                     <div>
                         <div class="div-centro">
-                            <img src="<?php echo $bin::$endpoint."Foto/".$dadosUsuario['foto']; ?>" style="width:50%;border-radius:50%;display:block;margin:10px auto;" id="ifoto" /> 
+                            <img src="<?php echo $bin::$endpoint."Dados/Foto/".$dadosUsuario['foto']; ?>" style="width:50%;border-radius:50%;display:block;margin:10px auto;" id="ifoto" /> 
                         </div>
                         
 
