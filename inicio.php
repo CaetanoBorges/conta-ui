@@ -28,25 +28,6 @@
         <div class="dividir-corpo esquerda">
 
 
-            
-                <div class="card-inicio">
-                    <div class="escritas-card esquerda">
-                        <p class="p-medio"> Informações </p><br>
-                        <p>Informações necessárias sobre a sua conta e os nossos serviços.</p>
-                    </div>
-                    <div class="imagem-card">
-                        <img src="icones/informacoesdois.png" alt="">
-                    </div>
-                    <a href="informacoes.php?ftpadbc=<?php echo $TOKEN ?>">
-                        <div class="acao-card baixo">
-                            <p>Tomar uma ação viável</p>
-                        </div>
-                    </a>
-                </div>
-            
-
-            
-            
                 <div class="card-inicio">
                     <div class="escritas-card esquerda">
                         <p class="p-medio"> Dados pessoais </p><br>
@@ -56,6 +37,21 @@
                         <img src="icones/dados.png" alt="">
                     </div>
                     <a href="dados.php?ftpadbc=<?php echo $TOKEN ?>">
+                        <div class="acao-card baixo">
+                            <p>Tomar uma ação viável</p>
+                        </div>
+                    </a>
+                </div>
+            
+                <div class="card-inicio">
+                    <div class="escritas-card esquerda">
+                        <p class="p-medio"> Pagamentos e subscrições </p><br>
+                        <p>Controle os seus pagamentos e subscrições dos nossos serviços.</p>
+                    </div>
+                    <div class="imagem-card">
+                        <img src="icones/pagamentosdois.png" alt="">
+                    </div>
+                    <a href="pagamentos.php?ftpadbc=<?php echo $TOKEN ?>">
                         <div class="acao-card baixo">
                             <p>Tomar uma ação viável</p>
                         </div>
@@ -85,24 +81,21 @@
                 </div>
             
 
-            
-            
-                <div class="card-inicio">
+            <div class="card-inicio">
                     <div class="escritas-card esquerda">
-                        <p class="p-medio"> Pagamentos e subscrições </p><br>
-                        <p>Controle os seus pagamentos e subscrições dos nossos serviços.</p>
+                        <p class="p-medio"> Informações </p><br>
+                        <p>Informações necessárias sobre a sua conta e os nossos serviços.</p>
                     </div>
                     <div class="imagem-card">
-                        <img src="icones/pagamentosdois.png" alt="">
+                        <img src="icones/informacoesdois.png" alt="">
                     </div>
-                    <a href="pagamentos.php?ftpadbc=<?php echo $TOKEN ?>">
+                    <a href="informacoes.php?ftpadbc=<?php echo $TOKEN ?>">
                         <div class="acao-card baixo">
                             <p>Tomar uma ação viável</p>
                         </div>
                     </a>
                 </div>
             
-
         </div>
 
         </div>
