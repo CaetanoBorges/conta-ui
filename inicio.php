@@ -99,6 +99,7 @@
         </div>
 
         </div>
+    <?php include("_partes/scripts.php"); ?>
 </body>
 
 </html>
