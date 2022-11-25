@@ -84,7 +84,7 @@
     <!-- -->
     <div class="rv-modal" id="registos-senha">
         <div class="rv-modal-fundodetras"></div>
-        <div class="rv-modal-conteudo rv-modal-p">
+        <div class="rv-modal-conteudo rv-modal-m">
             <div class="rv-modal-cabecalho">
                 <h3>Registros de senha</h3>
                 <span class="rv-btn-r rv-btn-tres rv-esconde-modal" style="position:absolute;top:1vh;right:1%;"></span>

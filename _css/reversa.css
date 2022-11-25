@@ -24,6 +24,7 @@
     width: 50% !important;
     top: 10vh !important;
     left: 25% !important;
+    min-width: fit-content !important;
 }
 
 .rv-modal-g {
@@ -40,9 +41,10 @@
     max-height: 80vh;
     min-height: fit-content;
     background: #fff;
-    z-index: 3;
+    z-index: 10101;
     border: 1px solid #7a7a7a7a;
     border-radius: 5px;
+    overflow-y: auto;
 }
 
 .rv-modal-cabecalho {

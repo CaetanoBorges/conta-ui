@@ -83,7 +83,7 @@
     <!-- -->
     <div class="rv-modal" id="foto">
         <div class="rv-modal-fundodetras"></div>
-        <div class="rv-modal-conteudo rv-modal-p">
+        <div class="rv-modal-conteudo rv-modal-g">
             <div class="rv-modal-cabecalho">
                 <h3>Alterar foto</h3>
                 <span class="rv-btn-r rv-btn-tres rv-esconde-modal" style="position:absolute;top:1vh;right:1%;"></span>
@@ -113,7 +113,7 @@
     <!-- -->
     <div class="rv-modal" id="nome">
         <div class="rv-modal-fundodetras"></div>
-        <div class="rv-modal-conteudo rv-modal-p">
+        <div class="rv-modal-conteudo rv-modal-g">
             <div class="rv-modal-cabecalho">
                 <h3>Atualizar nome e apelido</h3>
                 <span class="rv-btn-r rv-btn-tres rv-esconde-modal" style="position:absolute;top:1vh;right:1%;"></span>
@@ -139,7 +139,7 @@
     <!-- -->
     <div class="rv-modal" id="nascimento">
         <div class="rv-modal-fundodetras"></div>
-        <div class="rv-modal-conteudo rv-modal-p">
+        <div class="rv-modal-conteudo rv-modal-g">
             <div class="rv-modal-cabecalho">
                 <h3>Atualizar nascimento</h3>
                 <span class="rv-btn-r rv-btn-tres rv-esconde-modal" style="position:absolute;top:1vh;right:1%;"></span>
@@ -172,7 +172,7 @@
     <!-- -->
     <div class="rv-modal" id="email">
         <div class="rv-modal-fundodetras"></div>
-        <div class="rv-modal-conteudo rv-modal-p">
+        <div class="rv-modal-conteudo rv-modal-g">
             <div class="rv-modal-cabecalho">
                 <h3>Atualizar email</h3>
                 <span class="rv-btn-r rv-btn-tres rv-esconde-modal" style="position:absolute;top:1vh;right:1%;"></span>
@@ -198,7 +198,7 @@
     <!-- -->
     <div class="rv-modal" id="telefone">
         <div class="rv-modal-fundodetras"></div>
-        <div class="rv-modal-conteudo rv-modal-p">
+        <div class="rv-modal-conteudo rv-modal-g">
             <div class="rv-modal-cabecalho">
                 <h3>Atualizar telefone</h3>
                 <span class="rv-btn-r rv-btn-tres rv-esconde-modal" style="position:absolute;top:1vh;right:1%;"></span>

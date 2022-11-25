@@ -15,7 +15,7 @@
         include("_partes/lado.php");
    ?>
 
-    <div class="corpo">
+    <div class="corpo"> 
         <div class="corpo-topo">
             <p class="p-grande">Não fique sem os serviços importantes para si</p>
             <p>Aqui pode ver os detalhes de suas subscrições e apenas dos serviços pagos, para que tenha controle do seu

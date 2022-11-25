@@ -5,14 +5,17 @@ debliwui_menu.innerHTML = `
             position:fixed;
             width:250px;
             left: 0;
-            top:61px;
-            height:fit-content;
+            top:0;
+            height:100vh;
+            border-right:2px solid #b4075920;
+            background: #fff7fc;
             z-index: 10000;
             padding:0;
         }
 
         .relativa{
             position: relative;
+            z-index: 10000;
         }
         
         ul {
@@ -37,7 +40,7 @@ debliwui_menu.innerHTML = `
             padding: 5px;
             display: flex;
             align-items:center;
-            border-radius: 0 5px 5px 0
+            margin: 7px 0;
         }
         
         ul li img {
@@ -48,7 +51,10 @@ debliwui_menu.innerHTML = `
     </style>
 
     <div class="container">
-        <div class="relativa">
+        
+        <img src="icones/menu.png" class="aciona-menu" style="width:25px; margin: 18px 0 0 15px;cursor:pointer">
+        <div class="relativa" style="display:block">
+            <br><br>
             <ul>
                 <a href="" class="url-inicio">
                     <li id="menu-inicio"> <img src="icones/pessoa.png"> <span>Página inicial</span></li>
@@ -64,7 +70,7 @@ debliwui_menu.innerHTML = `
                 </a>
                 <div class="linha-divisoria"></div>
                 <a href="" class="url-informacoes">
-                    <li id="menu-informacoes"> <img src="icones/informacoes.png"> <span>Informações</span></li>
+                    <li id="menu-informacoes"> <img src="icones/informacoes.png"> <span>Sair</span></li>
                 </a>
             </ul>
         </div>
@@ -81,14 +87,27 @@ class debliwuimenu extends HTMLElement {
 
     fechar(esse) {
         let container = esse.shadowRoot.querySelector('.container');
-        container.style.display = "none";
+
+        if (container.style.display == "none") {
+            container.style.display = "block";
+        } else {
+            container.style.display = "none";
+        }
     }
 
     connectedCallback() {
         var esse = this;
 
         var token = this.getAttribute('token');
+        this.shadowRoot.querySelector('.aciona-menu').addEventListener("click", function() {
+            let container = esse.shadowRoot.querySelector('.relativa');
 
+            if (container.style.display == "none") {
+                container.style.display = "block";
+            } else {
+                container.style.display = "none";
+            }
+        });
 
         this.shadowRoot.querySelector('.url-inicio').setAttribute("href", "inicio.php?ftpadbc=" + token);
         this.shadowRoot.querySelector('.url-dados').setAttribute("href", "dados.php?ftpadbc=" + token);
