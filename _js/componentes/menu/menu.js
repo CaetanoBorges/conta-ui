@@ -3,19 +3,33 @@ debliwui_menu.innerHTML = `
     <style>
         .container{
             position:fixed;
-            width:250px;
+            width:fit-content;
             left: 0;
             top:0;
+            height:100vh;
+            z-index: 10000;
+            padding:0;
+        }
+        .conteudo{
+            width:250px;
             height:100vh;
             border-right:2px solid #b4075920;
             background: #fff7fc;
             z-index: 10000;
-            padding:0;
         }
-
         .relativa{
             position: relative;
             z-index: 10000;
+            overflow:auto;
+        }
+        .backdrop{
+            width:100%;
+            height:100%;
+            position:fixed;
+            width:100%;
+            left: 0;
+            top:47px;
+            height:100vh;
         }
         
         ul {
@@ -48,32 +62,47 @@ debliwui_menu.innerHTML = `
             margin: 0 10px 0 20px;
         }
 
+        .aciona-menu{
+            width:25px;
+            margin: 18px 0 0 15px;
+            cursor:pointer;
+            z-index:11111;
+        }
+        @media screen and (max-width:700px) {
+            .conteudo{
+                display:none;
+            }
+        }
     </style>
 
     <div class="container">
+        <img src="icones/menu.png" class="aciona-menu">
         
-        <img src="icones/menu.png" class="aciona-menu" style="width:25px; margin: 18px 0 0 15px;cursor:pointer">
-        <div class="relativa" style="display:block">
-            <br><br>
-            <ul>
-                <a href="" class="url-inicio">
-                    <li id="menu-inicio"> <img src="icones/pessoa.png"> <span>Página inicial</span></li>
-                </a>
-                <a href="" class="url-dados">
-                    <li id="menu-dados"> <img src="icones/identidade.png"> <span>Dados pessoais</span></li>
-                </a>
-                <a href="seguranca.php?ftpadbc=<?php echo $TOKEN ?>" class="url-seguranca">
-                    <li id="menu-seguranca"> <img src="icones/seguranca.png"> <span>Segurança</span></li>
-                </a>
-                <a href="" class="url-pagamentos">
-                    <li id="menu-pagamento"> <img src="icones/pagamentos.png"> <span>Pagamentos e subscrições</span></li>
-                </a>
-                <div class="linha-divisoria"></div>
-                <a href="" class="url-informacoes">
-                    <li id="menu-informacoes"> <img src="icones/informacoes.png"> <span>Sair</span></li>
-                </a>
-            </ul>
+        <div class="conteudo" style="display:none">
+            <div class="backdrop"></div>
+            <div class="relativa">
+                <br><br>
+                <ul>
+                    <a href="" class="url-inicio">
+                        <li id="menu-inicio"> <img src="icones/pessoa.png"> <span>Página inicial</span></li>
+                    </a>
+                    <a href="" class="url-dados">
+                        <li id="menu-dados"> <img src="icones/identidade.png"> <span>Dados pessoais</span></li>
+                    </a>
+                    <a href="seguranca.php?ftpadbc=<?php echo $TOKEN ?>" class="url-seguranca">
+                        <li id="menu-seguranca"> <img src="icones/seguranca.png"> <span>Segurança</span></li>
+                    </a>
+                    <a href="" class="url-pagamentos">
+                        <li id="menu-pagamento"> <img src="icones/pagamentos.png"> <span>Pagamentos e subscrições</span></li>
+                    </a>
+                    <div class="linha-divisoria"></div>
+                    <a href="" class="url-informacoes">
+                        <li id="menu-informacoes"> <img src="icones/informacoes.png"> <span>Sair</span></li>
+                    </a>
+                </ul>
+            </div>
         </div>
+        
     </div>
 `;
 
@@ -100,7 +129,16 @@ class debliwuimenu extends HTMLElement {
 
         var token = this.getAttribute('token');
         this.shadowRoot.querySelector('.aciona-menu').addEventListener("click", function() {
-            let container = esse.shadowRoot.querySelector('.relativa');
+            let container = esse.shadowRoot.querySelector('.conteudo');
+
+            if (container.style.display == "none") {
+                container.style.display = "block";
+            } else {
+                container.style.display = "none";
+            }
+        });
+        this.shadowRoot.querySelector('.backdrop').addEventListener("click", function() {
+            let container = esse.shadowRoot.querySelector('.conteudo');
 
             if (container.style.display == "none") {
                 container.style.display = "block";
