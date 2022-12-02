@@ -15,7 +15,7 @@
      position: -webkit-sticky;
      /* Safari */
      position: sticky;
-     top: 1px;
+     top: 0;
      background: white;
      z-index: 999;
  }
@@ -141,7 +141,7 @@
      position: relative;
      border: 1px solid #cccccc;
      border-radius: 10px;
-     z-index: 10;
+     z-index: 0;
  }
  
  .direita {
@@ -223,6 +223,21 @@
  .lista-numerica {
      padding: 5px;
      list-style: decimal;
+ }
+ 
+ .div-servico {
+     width: 49%;
+     display: inline-flex;
+     align-items: center;
+     justify-content: space-between;
+     align-content: flex-end;
+     flex-wrap: nowrap;
+     flex-direction: column;
+     margin: 10px 0 30px 0;
+ }
+ 
+ .div-servico img {
+     width: 50%;
  }
  
  @media screen and (max-width:700px) {

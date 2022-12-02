@@ -17,7 +17,7 @@ class Bin{
     
     }
     
-    static function get($url, $opt){
+    static function get($url, $opt=[]){
         $qtd = count($opt);
         $control = 1;
         $variaveis="";

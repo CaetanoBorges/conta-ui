@@ -73,7 +73,7 @@
 
         <div class="dividir-corpo direita">
         <div class="limpa"></div>
-        <ul class="menu-dentro">
+            <ul class="menu-dentro">
                 <li tipo="rv-aciona-modal" qual="#registos-senha">
                     Registros de alteração da senha
                 </li>

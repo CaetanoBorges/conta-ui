@@ -127,6 +127,10 @@
     background: red !important;
 }
 
+.rv-btn-quatro {
+    background: #ff0992 !important;
+}
+
 
 /* CORES DE TEXTOS */
 
@@ -140,6 +144,10 @@
 
 .rv-txt-cl-tres {
     color: red !important;
+}
+
+.rv-txt-cl-quatro {
+    color: #ff0992 !important;
 }
 
 

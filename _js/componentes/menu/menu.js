@@ -6,8 +6,8 @@ debliwui_menu.innerHTML = `
             width:fit-content;
             left: 0;
             top:0;
-            height:100vh;
-            z-index: 10000;
+            height:fit-content;
+            z-index: 10102;
             padding:0;
         }
         .conteudo{
@@ -15,11 +15,11 @@ debliwui_menu.innerHTML = `
             height:100vh;
             border-right:2px solid #b4075920;
             background: #fff7fc;
-            z-index: 10000;
+            z-index: 10102;
         }
         .relativa{
             position: relative;
-            z-index: 10000;
+            z-index: 10102;
             overflow:auto;
         }
         .backdrop{
@@ -157,9 +157,5 @@ class debliwuimenu extends HTMLElement {
 
     }
 
-
-
-
 }
-
 window.customElements.define('debliwui-menu', debliwuimenu)
