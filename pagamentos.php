@@ -8,6 +8,7 @@
 <head>
     <?php include("_partes/head.php") ?>
     <link rel="stylesheet" href="_css/pagamentos.css">
+    <script src="_js/pagamentos/pagar.js"></script>
     <title>Pagamentos</title>
 </head>
 
@@ -55,7 +56,7 @@
                                                         <li>Anual: 20 000 AO</li>
                                                     </ul>
                                                     <div class="limpa"></div>
-                                                    <p class="rv-btn rv-btn-um rv-cursor rv-txt-centro" tipo="rv-aciona-collapse"
+                                                    <p class="rv-btn rv-btn-dois rv-cursor rv-txt-centro" tipo="rv-aciona-collapse"
                                                         qual="#registro-sub">Registro de subscrições
                                                     </p>
 
@@ -71,16 +72,17 @@
                                                 <div class="dividir-corpo direita">
                                                     <p class="p-grande rv-txt-centro">Pagar subscrição</p>
                                                     <input type="file" name="file" id="comprovativo" class="inputfile" accept="image/png, image/jpg, image/jpeg, application/pdf" required="required"/>
-                                                    <label for="comprovativo" title="Pode ser documento ou imagem" class="input-entrar"> <img
+                                                    <label for="comprovativo" title="Pode ser documento ou imagem" class="input-entrar rv-btn-quatro"> <img
                                                             src="icones/arq-up.png" class="img-up"> <span class="span-up">Inserir
                                                             fatura</span></label>
 
-                                                    <select name="" id="" class="input-entrar" required="required">
+                                                    <select name="" id="tipo-pagamento" class="input-entrar" required="required">
                                                         <option value="0">Selecionar tempo</option>
                                                         <option value="semestral">Semestral</option>
                                                         <option value="anual">Anual</option>
                                                     </select>
-                                                    <button class="input-entrar">Submeter</button>
+                                                    <input type="hidden" value="<?php echo $servico['chave'] ?>" id="chave-app">
+                                                    <button class="input-entrar" >Submeter</button>
                                                 </div>
 
                                             </div>
