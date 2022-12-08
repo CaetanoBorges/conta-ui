@@ -8,7 +8,6 @@
 <head>
     <?php include("_partes/head.php") ?>
     <link rel="stylesheet" href="_css/pagamentos.css">
-    <script src="_js/pagamentos/pagar.js"></script>
     <title>Pagamentos</title>
 </head>
 
@@ -29,7 +28,7 @@
             <p class="p-grande">Servicos</p>
             <ul class="menu-dentro">
                  <?php
-                    foreach($servicos as $servico){
+                    foreach($servicos as $UIIDapp => $servico){
                         $servico = (array) $servico;
                         ?>
                         <li tipo="rv-aciona-modal" qual="#app<?php echo $servico['id'] ?>">
@@ -52,8 +51,12 @@
                                                     <img src="<?php echo $servico['logo'] ?>" class="logo-modal-pagamento">
                                                     <p class="p-grande">Preços</p>
                                                     <ul class="menu-dentro">
-                                                        <li>Semestral: 12 000 AO</li>
-                                                        <li>Anual: 20 000 AO</li>
+                                                        <?php 
+                                                        $precos = (array) json_decode($servico['preco']);
+                                                        foreach($precos as $chave => $valor){
+                                                        ?>
+                                                        <li style="text-transform: capitalize;"><?php echo array_keys($precos,$valor)[0].": ".number_format($valor,0,' ', ' '); ?> AO</li>
+                                                        <?php } ?>
                                                     </ul>
                                                     <div class="limpa"></div>
                                                     <p class="rv-btn rv-btn-dois rv-cursor rv-txt-centro" tipo="rv-aciona-collapse"
@@ -71,18 +74,21 @@
                                                 </div>
                                                 <div class="dividir-corpo direita">
                                                     <p class="p-grande rv-txt-centro">Pagar subscrição</p>
-                                                    <input type="file" name="file" id="comprovativo" class="inputfile" accept="image/png, image/jpg, image/jpeg, application/pdf" required="required"/>
-                                                    <label for="comprovativo" title="Pode ser documento ou imagem" class="input-entrar rv-btn-quatro"> <img
-                                                            src="icones/arq-up.png" class="img-up"> <span class="span-up">Inserir
+                                                    <input type="file" name="file" id="comprovativo<?php echo $UIIDapp ?>" class="inputfile" accept="image/png, image/jpg, image/jpeg, application/pdf" required="required"/>
+                                                    <label for="comprovativo<?php echo $UIIDapp ?>" title="Pode ser documento ou imagem" class="input-entrar rv-btn-quatro"> <img
+                                                            src="icones/arq-up.png" class="img-up"> <span class="span-up comprovativo<?php echo $UIIDapp ?>" >Inserir
                                                             fatura</span></label>
 
-                                                    <select name="" id="tipo-pagamento" class="input-entrar" required="required">
+                                                    <select name="" id="tipo-pagamento<?php echo $UIIDapp ?>" class="input-entrar" required="required">
                                                         <option value="0">Selecionar tempo</option>
                                                         <option value="semestral">Semestral</option>
                                                         <option value="anual">Anual</option>
                                                     </select>
-                                                    <input type="hidden" value="<?php echo $servico['chave'] ?>" id="chave-app">
-                                                    <button class="input-entrar" >Submeter</button>
+                                                    <script>
+                                                    </script>
+                                                    
+                                                    <input type="hidden" value="<?php echo $servico['chave'] ?>" id="chave-app<?php echo $UIIDapp ?>">
+                                                    <button class="input-entrar" onclick='accaoFazPagamento("<?php echo $UIIDapp ?>")'>Submeter</button>
                                                 </div>
 
                                             </div>
@@ -158,6 +164,7 @@
     
 
     <?php include("_partes/scripts.php") ?>
+    <script src="_js/pagamentos/pagar.js"></script>
 </body>
 
 </html>
