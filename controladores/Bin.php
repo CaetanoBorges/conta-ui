@@ -37,6 +37,11 @@ class Bin{
         return $res;
     
     }
+
+    static function quando($quando){
+        date_default_timezone_set("Africa/Luanda");
+        return date("d-m-Y H:i:s A",$quando);
+    }
     
 }
 

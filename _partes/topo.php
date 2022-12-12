@@ -22,7 +22,7 @@
                             foreach($servicos as $servico){
                                 $servico = (array) $servico;
                                 ?>
-                                    <a href="<?php echo $servico['link']."?ftpadbc=".$TOKEN ?>" target="_blink">
+                                    <a href="<?php echo $servico['link']."?ftpadbc=".$TOKEN ?>" target="_blink" class="topo-servicos">
                                         <div class="div-servico">
                                             <img src="<?php echo $servico['logo'] ?>" alt="">
                                             <h3><?php echo $servico['nome'] ?></h3>

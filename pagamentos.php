@@ -3,6 +3,7 @@
 <?php include("controladores/Bin.php"); ?>
 <?php include("controladores/inicio.php"); ?>
 <?php include("controladores/topo.php"); ?>
+<?php include("controladores/pagamentos.php"); ?>
 <html lang="pt">
 
 <head>
@@ -13,6 +14,7 @@
 
 <body>
     <?php
+        include("_partes/load.php");
         include("_partes/topo.php");
         include("_partes/lado.php");
    ?>
@@ -60,15 +62,11 @@
                                                     </ul>
                                                     <div class="limpa"></div>
                                                     <p class="rv-btn rv-btn-dois rv-cursor rv-txt-centro" tipo="rv-aciona-collapse"
-                                                        qual="#registro-sub">Registro de subscrições
+                                                        qual="#registro-sub<?php echo $servico['chave']; ?>">Registro de subscrições
                                                     </p>
 
-                                                    <div class="rv-collapse" id="registro-sub">
-                                                        <ul class="menu-dentro">
-                                                            <li>Semestral: 22-04-2021 <i class="rv-txt-cl-quatro">Pendente</i></li>
-                                                            <li>Semestral: 20-07-2020 <i class="rv-txt-cl-dois">Confirmado</i></li>
-                                                            <li>Semestral: 02-01-2020 <i class="rv-txt-cl-dois">Confirmado</i></li>
-                                                        </ul>
+                                                    <div class="rv-collapse" id="registro-sub<?php echo $servico['chave']; ?>">
+                                                        <?php registoDePagamentos($bin,$url,$TOKEN,$servico['chave']); ?>
                                                     </div>
 
                                                 </div>

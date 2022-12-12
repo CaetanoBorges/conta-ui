@@ -240,6 +240,12 @@
      width: 50%;
  }
  
+ .topo-servicos {
+     text-decoration: none;
+     color: #8d6f6f;
+     font-weight: 100;
+ }
+ 
  @media screen and (max-width:700px) {
      .corpo {
          width: 80%;

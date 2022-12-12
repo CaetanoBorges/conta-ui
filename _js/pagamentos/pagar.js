@@ -13,8 +13,6 @@ $(document).ready(function() {
 })
 
 function accaoFazPagamento(UIIDapp) {
-
-
     if (($('#comprovativo' + UIIDapp).val()).length <= 3) {
         Bin.notifica("Insira o comprovativo");
         return;
@@ -49,6 +47,7 @@ function accaoFazPagamento(UIIDapp) {
             } else {
                 Bin.notifica("Algo inesperado aconteceu, repita...");
             }
+            location.reload();
             Bin.loader();
         }
     });
