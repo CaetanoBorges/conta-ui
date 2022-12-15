@@ -5,7 +5,7 @@
 <html lang="pt">
 
 <head>
-    <link rel="stylesheet" href="_css/passtrength.css">
+    <link rel="stylesheet" href="http://cdn.binga.ao/conta/_css/passtrength.css">
     <?php include("_partes/head.php") ?>
     <title>Segurança</title>
 </head>
@@ -113,8 +113,8 @@
     </div>
    
     <?php include("_partes/scripts.php") ?>
-    <script src="_js/passtrength.js"></script>
-    <script src="_js/seguranca/palavraPasse.js"></script>
+    <script src="http://cdn.binga.ao/conta/_js/passtrength.js"></script>
+    <script src="http://cdn.binga.ao/conta/_js/seguranca/palavraPasse.js"></script>
     <script>
    
     </script>

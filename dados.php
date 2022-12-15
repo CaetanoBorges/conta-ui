@@ -225,14 +225,14 @@
   
    
    <?php include("_partes/scripts.php") ?>
-   <script src="_js/dados/territorios.js"></script>
-   <script src="_js/dados/dados.js"></script>
-   <script src="_js/dados/foto.js"></script>
-   <script src="_js/dados/localizacao.js"></script>
-   <script src="_js/dados/nomeApelido.js"></script>
-   <script src="_js/dados/nascimentoGenero.js"></script>
-   <script src="_js/dados/email.js"></script>
-   <script src="_js/dados/telefone.js"></script>
+   <script src="http://cdn.binga.ao/conta/_js/dados/territorios.js"></script>
+   <script src="http://cdn.binga.ao/conta/_js/dados/dados.js"></script>
+   <script src="http://cdn.binga.ao/conta/_js/dados/foto.js"></script>
+   <script src="http://cdn.binga.ao/conta/_js/dados/localizacao.js"></script>
+   <script src="http://cdn.binga.ao/conta/_js/dados/nomeApelido.js"></script>
+   <script src="http://cdn.binga.ao/conta/_js/dados/nascimentoGenero.js"></script>
+   <script src="http://cdn.binga.ao/conta/_js/dados/email.js"></script>
+   <script src="http://cdn.binga.ao/conta/_js/dados/telefone.js"></script>
 </body>
 
 </html>

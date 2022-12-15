@@ -34,7 +34,7 @@
                         <p>Os seus dados pessoais na nossa plataforma, pode alterar a qualquer momento.</p>
                     </div>
                     <div class="imagem-card">
-                        <img src="icones/dados.png" alt="">
+                        <img src="http://cdn.binga.ao/conta/icones/dados.png" alt="">
                     </div>
                     <a href="dados.php?ftpadbc=<?php echo $TOKEN ?>">
                         <div class="acao-card baixo">
@@ -49,7 +49,7 @@
                         <p>Controle os seus pagamentos e subscrições dos nossos serviços.</p>
                     </div>
                     <div class="imagem-card">
-                        <img src="icones/pagamentosdois.png" alt="">
+                        <img src="http://cdn.binga.ao/conta/icones/pagamentosdois.png" alt="">
                     </div>
                     <a href="pagamentos.php?ftpadbc=<?php echo $TOKEN ?>">
                         <div class="acao-card baixo">
@@ -71,7 +71,7 @@
                         <p>A protecção da sua conta. Mantenha sempre a sua conta segura com uma palavra-passe segura.</p>
                     </div>
                     <div class="imagem-card">
-                        <img src="icones/cadeado.png" alt="">
+                        <img src="http://cdn.binga.ao/conta/icones/cadeado.png" alt="">
                     </div>
                     <a href="seguranca.php?ftpadbc=<?php echo $TOKEN ?>">
                         <div class="acao-card baixo">
@@ -87,7 +87,7 @@
                         <p>Informações necessárias sobre a sua conta e os nossos serviços.</p>
                     </div>
                     <div class="imagem-card">
-                        <img src="icones/informacoesdois.png" alt="">
+                        <img src="http://cdn.binga.ao/conta/icones/informacoesdois.png" alt="">
                     </div>
                     <a href="informacoes.php?ftpadbc=<?php echo $TOKEN ?>">
                         <div class="acao-card baixo">

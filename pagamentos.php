@@ -8,7 +8,7 @@
 
 <head>
     <?php include("_partes/head.php") ?>
-    <link rel="stylesheet" href="_css/pagamentos.css">
+    <link rel="stylesheet" href="http://cdn.binga.ao/conta/_css/pagamentos.css">
     <title>Pagamentos</title>
 </head>
 
@@ -162,7 +162,7 @@
     
 
     <?php include("_partes/scripts.php") ?>
-    <script src="_js/pagamentos/pagar.js"></script>
+    <script src="http://cdn.binga.ao/conta/_js/pagamentos/pagar.js"></script>
 </body>
 
 </html>
